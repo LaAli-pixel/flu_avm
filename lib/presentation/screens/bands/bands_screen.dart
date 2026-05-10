@@ -25,17 +25,33 @@ class BandsScreen extends StatelessWidget {
       );
   }
 
-  ListTile _bandTile(Band band) {
-    return ListTile(
-      leading: CircleAvatar(
-        child: Text(band.nomen.substring(0, 2).toUpperCase()),
+  Widget _bandTile(Band band) {
+    return Dismissible(
+      key: Key(band.id),
+      direction: DismissDirection.startToEnd,
+      onDismissed: (direction) {
+        print('direction: $direction');
+        print('${band.id}');
+      },
+      background: Container(
+        padding: EdgeInsets.only(left: 8.0),
+        color: Colors.red,
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: Text('Delete Band', style: TextStyle(color: Colors.white),),
+          ),
       ),
-      title: Text(band.nomen),
-      trailing: Text('${ band.numerusVotum }', style: TextStyle(fontSize: 20),),
-      onTap: () {
-        // ignore: avoid_print
-        print(band.nomen);
-      }
+      child: ListTile(
+        leading: CircleAvatar(
+          child: Text(band.nomen.substring(0, 2).toUpperCase()),
+        ),
+        title: Text(band.nomen),
+        trailing: Text('${ band.numerusVotum }', style: TextStyle(fontSize: 20),),
+        onTap: () {
+          // ignore: avoid_print
+          print(band.nomen);
+        }
+      ),
     );
   }
   addereNovumBand(BuildContext context) {
