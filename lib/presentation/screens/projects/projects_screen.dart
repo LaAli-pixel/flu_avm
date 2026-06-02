@@ -73,14 +73,27 @@ class _ProjectCard extends StatelessWidget {
       onTap: () {
         context.push('/projects/$index');
       },
-      child: Card(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+ child: Card(
+        clipBehavior: Clip.antiAlias,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            if (project.imago != null)
+              Image(
+                image: AssetImage(project.imago!),
+                fit: BoxFit.cover,
+              ),
+            if (project.imago != null)
+              Container(color: Colors.black.withAlpha(90)),
+              Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CircleAvatar(
-                backgroundColor: colorum.primary.withAlpha(60),
+                backgroundColor: project.imago != null
+                   ? Colors.white.withAlpha(220)
+                   : colorum.primary.withAlpha(60),
                 child: Icon(project.icon, color: colorum.primary),
               ),
               const Spacer(),
@@ -106,7 +119,9 @@ class _ProjectCard extends StatelessWidget {
             ],
           ),
         ),
+      ],
       ),
+    ),
     );
   }
 }

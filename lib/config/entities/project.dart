@@ -6,6 +6,9 @@ class Project {
   final String descriptio;
   final IconData icon;
   final List<String> technologiae;
+  final String? imago;
+  final String? schedaTechnica;
+  final bool habetTabulam;
 
   const Project({
     required this.titulus,
@@ -13,6 +16,9 @@ class Project {
     required this.descriptio,
     required this.icon,
     this.technologiae = const [],
+    this.imago,
+    this.schedaTechnica,
+    this.habetTabulam = false,
   });
 }
 
@@ -28,6 +34,9 @@ const projectList = <Project>[
         'combinada con el humor y la nostalgia que generan los objetos.',
     icon: Icons.chair_outlined,
     technologiae: ['Proyección', 'Juguetes', 'Escultura', 'Espacio de reunión'],
+    imago: 'assets/images/crayon.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: Le crayon vert\nAño: 2026\nMedidas: Variables\nMateriales: Juguete, pantalla de proyección, butacas, lente, foco',
   ),
   Project(
     titulus: 'GRITO: a veces a voces.',
@@ -40,6 +49,10 @@ const projectList = <Project>[
         'posibilidades para la expresión individual.',
     icon: Icons.mic_outlined,
     technologiae: ['Interfaz', 'Electrónica', 'Voz', 'Collar', 'Modificación corporal'],
+    imago: 'assets/images/grito.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: GRITO: a veces a voces.\nAño: 2026\nMedidas: variables\nMateriales: silicona médica flexible de baja densidad y grosor, componentes electrónicos',
+    habetTabulam: true,
   ),
   Project(
     titulus: 'oy yo no',
@@ -52,6 +65,9 @@ const projectList = <Project>[
         ' otras formas de estar, de relacionarnos y de construirnos más allá de la pantalla.',
     icon: Icons.movie_filter_outlined,
     technologiae: ['Grabación', 'Acción', 'Proyección', 'Poema'],
+    imago: 'assets/images/oyyono.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: oy yo no\nAño: 2026\nMedidas: 07’19’’\nMateriales: vídeo digital monocanal DV, color, sonido, 16:9',  
   ),
   Project(
     titulus: 'oy yo contigo',
@@ -61,6 +77,9 @@ const projectList = <Project>[
         ' marcado por la autosuficiencia y la optimización constante del yo?',
     icon: Icons.bubble_chart_outlined,
     technologiae: ['Arduino', 'Interactividad', 'Cámaras', 'Sensores'],
+    imago: 'assets/images/oyyocontigo.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: oy yo contigo\nAño: 2026\nMedidas: variables\nMateriales: agua, audio, recipiente de cristal, recipiente de plástico, microbombasumergible de agua, tubería de agua de PVC, módulo sensor ultrasónico, Arduino, relé, cámara y fuente de energía externa de 5V/2A',
   ),
   Project(
     titulus: 'oy yo',
@@ -72,6 +91,9 @@ const projectList = <Project>[
         ' más allá de las superficies que nos separan, sigue existiendo la posibilidad de tocarnos.',
     icon: Icons.view_in_ar_outlined,
     technologiae: ['Video', 'Performance', 'Proyección', 'Escultura'],
+    imago: 'assets/images/oyyo.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: oy yo\nAño: 2025\nMedidas: variables\nMateriales: Plástico, proyector, focos',
   ),
     Project(
     titulus: 'oy yo contemplativxs',
@@ -86,6 +108,9 @@ const projectList = <Project>[
         ' Queremos más vidas, pero continuamos teniendo la misma cantidad de tiempo.',
     icon: Icons.videocam_outlined,
     technologiae: ['Video', 'Performance', 'Nintendo Switch', 'Sonido de TikTok'],
+    imago: 'assets/images/oyyocontemplativxs.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: oy yo contemplativxs\nAño: 2026\nMedidas: 09’55’’\nMateriales: vídeo digital monocanal DV, color, sonido, 16:9',
   ),
     Project(
     titulus: 'Abrazos húmedos',
@@ -106,6 +131,9 @@ const projectList = <Project>[
         'Si tú existes, yo también.',
     icon: Icons.nature_people_outlined,
     technologiae: ['Plástico', 'Acción', 'Grabación', 'Paseo', 'Paisaje'],
+    imago: 'assets/images/abrazos.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: Abrazos húmedos\nAño: 2025\nMedidas: 25’30’’\nMateriales: vídeo digital monocanal DV, color, sonido, 16:9',
   ),
     Project(
     titulus: 'Besos húmedos',
@@ -119,5 +147,8 @@ const projectList = <Project>[
         ' Una conexión que nunca se alcanza, pero sí consume.',
     icon: Icons.close_fullscreen_outlined,
     technologiae: ['Proyección', 'Acción', 'Grabación', 'Plástico'],
+    imago: 'assets/images/besos.png',
+    schedaTechnica:
+        'Ficha técnica\n\nTítulo: Besos húmedos\nAño: 2025\nMedidas: 0’58’’\nMateriales: vídeo digital monocanal DV, color, sonido, 16:9',
   ),
 ];
