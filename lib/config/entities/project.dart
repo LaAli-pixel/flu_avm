@@ -30,6 +30,18 @@ const projectList = <Project>[
     technologiae: ['Proyección', 'Juguetes', 'Escultura', 'Espacio de reunión'],
   ),
   Project(
+    titulus: 'GRITO: a veces a voces.',
+    subtitulus: 'Voz Expandida. Exploración artística y tecnocientífica de la identidad vocal',
+    descriptio:
+        'Un dispositivo que propone una investigación artística que utiliza herramientas y  '
+        'conocimientos científicos para explorar nuevas formas de construcción identitaria. '
+        'A través de una prótesis vocal especulativa, el proyecto examina cómo la tecnología podría intervenir en procesos '
+        'tradicionalmente considerados biológicos, abriendo nuevas '
+        'posibilidades para la expresión individual.',
+    icon: Icons.mic_outlined,
+    technologiae: ['Interfaz', 'Electrónica', 'Voz', 'Collar', 'Modificación corporal'],
+  ),
+  Project(
     titulus: 'oy yo no',
     subtitulus: 'Un ensayo audiovisual sobre las disoluciones de la identidad en la era digital',
     descriptio:
@@ -76,6 +88,26 @@ const projectList = <Project>[
     technologiae: ['Video', 'Performance', 'Nintendo Switch', 'Sonido de TikTok'],
   ),
     Project(
+    titulus: 'Abrazos húmedos',
+    subtitulus: 'Imagen en movimiento de una acción en un entorno rural',
+    descriptio:
+        'Un desconocido pero extravagante árbol. Vigilante incluso. '
+        'Que pide, prácticamente a gritos, atención. Sobre la sierra se'
+        ' levanta una planta diferente, más pelada y alta, '
+        'pero atractiva.  '
+        'El deseo de conocer, de nuevo sentir, de nuevo ver, '
+        'de nuevo. '
+        'Quizá sea personal, '
+        'pero, sea así o no, yo siento que lo necesito. '
+        'Aún busco mi identidad, mi individualidad. Para entenderme quiero conectar con mis raíces, con mi tierra.'
+        ' Aún así, no puedo esperar convertirme en una persona nueva. '
+        'Mi piel plástica me sigue a todas partes, pero, contigo, no es igual. '
+        'Tú, mi querido árbol artificial, eres mi esperanza para comprender mi dualidad naturaleza-tecnología. '
+        'Si tú existes, yo también.',
+    icon: Icons.nature_people_outlined,
+    technologiae: ['Plástico', 'Acción', 'Grabación', 'Paseo', 'Paisaje'],
+  ),
+    Project(
     titulus: 'Besos húmedos',
     subtitulus: 'Imagen en movimiento de una acción en la intimidad',
     descriptio:
@@ -85,8 +117,7 @@ const projectList = <Project>[
         'que suda y suda, '
         'por un caparazón impermeable, una envoltura impenetrable.'
         ' Una conexión que nunca se alcanza, pero sí consume.',
-      icon: Icons.close_fullscreen_outlined,
+    icon: Icons.close_fullscreen_outlined,
     technologiae: ['Proyección', 'Acción', 'Grabación', 'Plástico'],
   ),
-
 ];
