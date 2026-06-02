@@ -34,6 +34,12 @@ final appRouter = GoRouter(
             final index = int.parse(state.pathParameters['index'] ?? '0');
             return ProjectScreen( index: index,);
           },
+           routes: [
+            GoRoute(
+              path: 'tabula',
+              builder: (context, state)=> const TabulaScreen(),
+            )
+          ]
            )
       ]
       ),

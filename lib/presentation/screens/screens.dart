@@ -5,3 +5,4 @@ export 'charta/charta_screen.dart';
 export 'adventus/adventus_screen.dart';
 export 'projects/projects_screen.dart';
 export 'projects/project_screen.dart';
+export 'projects/tabula_screen.dart';

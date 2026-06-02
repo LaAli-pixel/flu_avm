@@ -181,7 +181,7 @@ class _AdventusView extends ConsumerWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                _StatBox(numerus: '5', titulus: 'PANTALLAS'),
+                _StatBox(numerus: '4', titulus: 'PANTALLAS'),
                 _StatBox(numerus: '2', titulus: 'WEBSOCKETS'),
                 _StatBox(numerus: 'AM', titulus: 'ALICIA MARTÍN-SERRANO'),
               ],

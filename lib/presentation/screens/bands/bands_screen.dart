@@ -125,6 +125,7 @@ class BandsScreen extends ConsumerWidget {
       ),
     );
   }
+  // ignore: strict_top_level_inference
   addereNovumBand(BuildContext context, WidgetRef ref) {
 
     final TextEditingController textumController  = TextEditingController();
