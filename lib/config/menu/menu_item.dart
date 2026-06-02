@@ -33,5 +33,11 @@ const appMenuItems = <MenuItem>[
    link: '/charta',
    icon: Icons.map_outlined, 
   ),
+  MenuItem(
+    titulus: 'La Ali de bolsillo',
+    subtitulus: 'Galería digital de arte experimental propio',
+    link: '/projects',
+    icon: Icons.work_outline
+    ),
 ];
 

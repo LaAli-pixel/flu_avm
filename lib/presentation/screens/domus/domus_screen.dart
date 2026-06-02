@@ -18,6 +18,12 @@ class DomusScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Flu Avm App'),
+        leading: IconButton(
+         onPressed: (){
+          context.go('/');
+         },
+         icon: Icon(Icons.home_outlined),
+      ),   
         actions: [
           IconButton(
             onPressed: () { 

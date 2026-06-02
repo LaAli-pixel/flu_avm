@@ -25,5 +25,17 @@ final appRouter = GoRouter(
       path: '/charta',
       builder: (context, state) => const ChartaScreen(),
     ),
+    GoRoute(path: '/projects',
+      builder: (context, state)=> const ProjectsScreen(),
+      routes: [
+        GoRoute(
+          path: ':index',
+          builder: (context, state){
+            final index = int.parse(state.pathParameters['index'] ?? '0');
+            return ProjectScreen( index: index,);
+          },
+           )
+      ]
+      ),
   ]
   );
